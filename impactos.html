@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head lang="pt-br">
+	<title>Impactos - WorldBat</title>
+	<meta name="viewport" content="width=device-width,initial-scale=1" charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="CSS/style.css">
+	<link rel="stylesheet" type="text/css" href="CSS/show-animate.css">
+	<link rel="stylesheet" type="text/css" href="CSS/show-target.css">
+	<link rel="stylesheet" type="text/css" href="CSS/fonts.css">
+	<link rel="stylesheet" type="text/css" href="CSS/menu-animation.css">
+	<link rel="stylesheet" type="text/css" href="CSS/impactos-desktop.css">
+	<link rel="stylesheet" type="text/css" href="CSS/impactos-mobile.css">
+	<script src="JS/jquery.min.js"></script>
+  <script src="JS/scroll-impactos.js"></script>
+    <script type="text/javascript" src="JS/loader.js"></script>
+    <script type="text/javascript">
+      google.charts.load('current', {'packages':['corechart']});
+      google.charts.setOnLoadCallback(paisesIndice);
+
+      function paisesIndice(){
+
+        var data = new google.visualization.DataTable();
+        data.addColumn("string", "Tipos de lixo");
+        data.addColumn("number", "Quantidade de lixo produzido");
+        data.addRows([
+          ["Lixo Eletrônico",50000000],
+          ["Outros tipos de lixo",1000000000 ],
+          ]);
+
+        var options = {
+          "title" : "Lixo Eletrônico em comparação com outros tipos de lixo",
+          colors : ["#4CAF50", "#3F51B5"],
+          "backgroundColor" : "#B2DFDB",
+          animation:{
+            duration: 1000,
+            easing: 'out',
+          }
+        };
+
+        var chart = new google.visualization.PieChart(document.getElementById("chart_div-1-2"));
+        chart.draw(data, options);
+      }
+</script>
+	<script type="text/javascript" src="JS/impact-app.js"></script>
+</head>
+<body>
+<div class="fake-nav"></div>
+<main>
+  <div class="first-info">
+    <h1 class="show-target medium">Os impactos ambientais causados pelo lixo eletrônico</h1>
+    <p class="animation-target">Aparentemente estas duas palavras (lixo e tecnologia) não tem muito a ver uma com a outra, ou quando tem é no melhor dos sentidos, ou seja, no sentido de algum tipo de tecnologia que trate ou dê destino adequado para o lixo. Porém estou querendo me referir ao sentido ruim que, juntas, podem formar. O sentido de que a tecnologia que utilizamos todos os dias vira lixo.</p>
+    <p class="animation-target">Você já percebeu com que velocidade as tecnologias são substituídas ,exemplo dos telefones celulares e computadores.Quando se substitui uma tecnologia, para onde vão os equipamentos “obsoletos”? (difícil de responder esta...acho que a maioria para o lixo não é?).</p>
+    <p class="animation-target">Está ai o motivo porque estas palavras andam juntas em seu pior sentido. Em nosso dia a dia não pensamos nisto, não pensamos o quanto uma bateria de celular ou de notebook vão poluir o solo ou os lençóis freáticos (e muitas vezes nem sabemos que poluem), ou mesmo os demais componentes como plástico e metais pesados. Nossa preocupação está geralmente em nos manter dentro da “onda”, da tecnologia.</p>
+    <p class="animation-target">E nos enganamos redondamente pensando que são apenas os equipamentos de alta tecnologia como computadores, câmeras e celulares que poluem o ambiente. Rádios, tv's, aparelhos de som, aparelhos elétricos, lâmpadas eletrônicas e etc. também contém inúmeros elementos altamente poluentes.</p>
+  </div>
+  <div class="second-info">
+    <h1 class="second-info-content show-target medium">Prejuízos e consequências</h1>
+    <img src="IMG/ecology.svg" title="Mundo Saudável" class="second-info-content second-info-image second-info-content-inside animation-target">
+    <div class="second-info-text second-info-content show-target second-info-content-inside">
+      <p>Devido ao descarte incorreto que muitas pessoas ainda realizam de seu lixo eletrônico, jogando-o em lixeiras comuns e misturando-o aos outros objetos de consumo, ainda há muitos prejuízos que são aplicados à natureza devido a esta prática, causando consequências a toda a população e podendo agravar os resultados ao longo do tempo.</p>
+      <p>O principal problema é quando o lixo eletrônico em questão é diretamente jogado fora no meio ambiente, fazendo com que as substâncias que compõe o aparelho possam tornar-se agressivas para a natureza, afinal estes produtos contém chumbo, cádmio, mercúrio, berílio, etc. que são consideradas substâncias químicas que podem causar prejuízos quando ao solo e até mesmo a água, contaminando estas duas vertentes que fazem parte do meio ambiente.</p>
+      <p>Desviando os fatos que ocorrem quanto aos prejuízos do descarte incorreto do lixo eletrônico quanto à natureza, também existem alguns problemas que são causados por jogar equipamentos eletrônicos fora de forma incorreta, aplicados aos próprios indivíduos, sendo que as mesmas substâncias químicas citadas acima podem trazer uma variedade de doenças, principalmente naquelas que frequentam lixões para sustentar-se e sobreviver, estando misturados com o lixo doméstico.</p>
+    </div>
+    
+  </div>
+  <div class="third-info">
+    <h1 class="medium third-info-content">Danos à saúde</h1>
+    <div class="third-info-text third-info-content third-info-content-inside animation-target">
+      <p>A preocupação ambiental em relação aos resíduos oriundos do avanço tecnológico vem crescendo muito nos últimos anos, as substâncias químicas presentes nos componentes eletrônicos, como mercúrio, cádmio, arsênio, cobre, chumbo e alumínio, penetram no solo e nos lençóis freáticos contaminando plantas e animais por meio da água, podendo provocar a contaminação da população através da ingestão desses produtos.</p>
+      <p>Visando a preservação ambiental, devemos ter uma atuação mais efetiva quanto aos processos finais do clico de vida de seus produtos, principalmente os que poluem e são considerados descartáveis, exigindo a mobilização de conhecimentos técnicos e capacidade gerencial e analisando um melhor aproveitamento da logística reversa no contexto desse ciclo de vida.</p>
+      <p>Os elementos químicos presentes no lixo eletrônico podem causar diversos problemas de saúde no ser humano.
+      A contaminação no homem pode ocorrer pelo contato direto com os elementos químicos, que entram na fabricação dos equipamentos eletrônicos.</p>
+    </div>
+    <img src="IMG/care.svg" title="Saúde" class="third-info-image third-info-content third-info-content-inside show-target">
+  </div>
+  <div class="forth-info">
+    <h1 class="forth-info-content medium">Falando em números:</h1>
+    <div class ="graphs-part forth-info-content" id="chart_div-1">
+      <h2 class="forth-info-content">Acerca do lixo eletrônico...</h2><p class="forth-info-content">Tais resíduos já representam aproximadamente 5% de todo o lixo produzido pela humanidade. Este valor não parece tão alarmente, entretanto, ele represente 50 milhões de toneladas de resíduos desta espécie, jogadas fora anualmente. Os avanços da modernidade facilitam a vida humana, porém, quando falamos em reciclagem, o Brasil está muito atrasado, apesar de sua Lei Federal estar em vigor desde 2010. Calcula-se que em 2013, aproximadamente, 90 milhões de novos celulares entrarão no mercado. E neste mesmo ano, teremos mais de 100 milhões de computadores vendidos. Desta enorme quantia, estima-se que apenas 4% serão devidamente descartados. Os demais serão guardados em casa ou descartados como lixo comum, agravando ainda mais o problema.</p></div>
+      <div class ="graphs-part forth-info-content" id="chart_div-1-2"></div>
+   </div>
+</main>
+
+<script type="text/javascript" src="JS/main.js"></script>
+</body>
+</html>

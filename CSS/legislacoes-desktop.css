@@ -1,0 +1,103 @@
+/*Legislações CSS */
+@media only screen and (min-width: 1024px){
+	main{
+		width: 100vw;
+	}
+	.first-info, .second-info{
+		min-height: 90vh;
+		width: 100%;
+		overflow: hidden;
+	}
+	.first-info h1 , .second-info h1 , .third-info h1 {
+		padding-top: 3%;
+		text-align: center;
+		margin-bottom: 5%;
+		color: #9d714b;
+	}
+	.first-info{
+		background-color: #ECEFF1;
+		color: #744716;
+	}
+	.first-text-1, .first-text-2{
+		width: 25%;
+		height: 75%;
+		display: inline-block;
+		vertical-align: top;
+		font-size: 2.4vmin;
+	}
+	.first-text-1{
+		margin-left: 5%;
+		text-align: right;
+	}
+	.first-text-2{
+		text-align: left; 
+	}
+	.first-info img, .third-info img{
+		height: 40vh;
+		width: 40vw;
+		display: inline-block;
+		vertical-align: top;
+	}
+	.second-info{
+		background-color: #B0BEC5;
+		color: #263238;
+	}
+	.second-info img{
+		height: 40vh;
+		width: 40vw;
+		vertical-align: top;	
+	}
+	.second-info-content{
+		display: none;
+	}
+	.second-info h1 {
+	color: #f3705a;
+	}
+	.text{
+		font-size: 2.6vmin;
+		height: 75%;
+		width: 55%;
+		margin: 2%;
+	}
+	.third-info{
+		width: 100%;
+		background-color: #78909C;
+		color: #fafafa;
+		text-align: center;
+		transition: all 2s;
+		height: 50vh;
+	}
+	.third-info h1{
+		color: #e0e0e0;
+	}
+	.third-info-content{
+		display: none;
+	}
+	.third-info .text {
+		height: 20vh;
+		width: 100%;
+		margin-right: 5%!important;
+		margin-bottom: 0px!important;
+	}
+	.show-hide-button{
+		margin-top: 2%;
+		border-radius: 2px;
+		background-color: #009688;
+		border: 1px solid #00897B;
+		color: #E3F2FD;
+		height: 10vh;
+		width: 40vw;
+		font-size: 3vmin;
+		transition: background-color 0.5s;
+		text-align: center;
+	}
+	.show-hide-button{
+		background-color: #004D40;
+		transition: all 0.5s;
+	}
+	.leis{
+		display: none;
+		margin: 2%;
+		font-size: 2.6vmin;
+	}
+}

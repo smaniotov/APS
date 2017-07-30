@@ -1,0 +1,126 @@
+@media only screen and (min-width: 1024px){
+	main{
+		height: 360vh;
+		width: 100vw;
+	}
+	.first-info {
+		height: 25%;
+		width: 100%;
+		background-color: #26A69A;
+		color: #FAFAFA;
+		background-image: url("fumaca.jpg");
+		background-attachment: fixed;
+		background-size: cover;
+		background-position: center;
+		overflow: hidden;
+	}
+	.first-info h1{
+		padding-top: 3%;
+		text-align: center;
+		margin-bottom: 5%;
+	}
+
+	.first-info p{
+		margin-top: 1%;
+		margin-left: 10%;
+		margin-right: 10%;
+		font-size: 3vmin;
+	}
+	.second-info {
+		height: 25%;
+		width: 100%;
+		background-color: #80CBC4;
+		color: #FAFAFA;
+		text-align: center;
+		overflow: hidden;
+	}
+	.second-info h1{
+		padding-top: 3%;
+		text-align: center;
+		color: #ffe356;
+	}
+	.second-info-text{
+		width: 50%;
+		height: 90%;
+		display: inline-block;
+		vertical-align: top;
+		margin-top: 1.5%;
+		margin-left: 10%;
+		font-size: 2.7vmin;
+	}
+	.second-info-image{
+		height: 80%;
+		width: 30%;
+		display: inline-block;
+	}
+	.second-info-content{
+		display: none;
+	}
+	.third-info {
+		height: 25%;
+		width: 100%;
+		background-color: #E0F2F1;
+		color: #004D40;
+		text-align: center;
+		overflow: hidden;
+	}
+	.third-info h1{
+		padding-top: 3%;
+		text-align: center;
+		color: #fd5d65;
+	}
+	.third-info-text{
+		width: 50%;
+		height: 90%;
+		display: inline-block;
+		vertical-align: top;
+		margin-top: 1.5%;
+		margin-right: 2%;
+		font-size: 2.7vmin;
+	}
+	.third-info-image{
+		height: 80%;
+		width: 40%;
+		display: inline-block;
+	}
+	.third-info-content{
+		display: none;
+	}
+	.forth-info{
+		height: 25%;
+		width: 100%;
+		background-color: #B2DFDB;
+		text-align: center;
+		color: #004D40;
+		overflow: hidden;
+	}
+	.forth-info h1{
+		padding-top: 1%;
+	}
+	.forth-info{
+		height: 25%;
+		width: 100%;
+		background-color: #B2DFDB;
+		text-align: center;
+		color: #004D40;
+	}
+	.forth-info h1{
+		padding-top: 1%;
+	}
+	.forth-info-content{
+		display: none;
+	}
+	.graphs-part{
+		height: 60%;
+		width: 49.82%;
+		display: inline-block;
+	}
+	#chart_div-1 {
+		vertical-align: top;
+		margin-top: 3%;
+		font-size: 3vmin;
+	}
+	#chart_div-1 h2{
+		margin-bottom: 1%;
+	}
+}

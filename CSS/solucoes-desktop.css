@@ -1,0 +1,95 @@
+@media only screen and (min-width: 1024px){
+
+	main{
+		width: 100vw;
+	}
+	.info {
+		min-height: 90vh;
+		width: 100%;
+		overflow: hidden;
+		transition: all 0.5s;
+	}
+	.info h1{
+		padding-top: 3%;
+		text-align: center;
+		margin-bottom: 2%;
+	}
+	.first{
+		background-color: #FAFAFA;
+	}
+	li{
+		display: none;
+	}
+	.first h1{
+		color: #004D40;
+	}
+	.first p {
+		text-align: center;
+		font-size: 3vmin;
+		margin-bottom: 5%;
+		color: #80CBC4;
+	}
+	.first .text{
+		height: 70%;
+		width: 45%;
+		margin: 2%;
+		font-size: 2.7vmin;
+		display: inline-block;
+		vertical-align: top;
+		color: #212121;
+	}
+	li{
+		margin: 1%;
+		color: #00695C;
+	}
+	.third img{
+		height: 60%;
+		width: 40%;
+	}
+	.second{
+		background-color: #00897B;
+		color: #E0F2F1;
+	}
+	.second-info-content, .third-info-content, .forth-info-content{
+		display: none;
+	}
+	.second p{
+		font-size: 3vmin;
+		padding: 3%;
+		padding-bottom: 3%;
+		color: #E0F2F1;
+	}
+	.second p:nth-child(1){
+		text-align: center;
+	}
+	.third{
+		background-color: #E0F2F1;
+		color:#004D40;
+	}
+	.third .text{
+		height: 70%;
+		width: 45%;
+		display: inline-block;
+		vertical-align: top;
+		padding: 2%;
+	}
+	.third p {
+		font-size: 2.5vmin;
+
+	}
+	.forth{
+		background-color: #FAFAFA;
+		color: #004D40;
+		text-align: center;
+		height: 1
+		min-height: 150vh;
+	}
+	.forth p{
+		margin: 5%;
+		font-size: 3vmin;
+	}
+	.forth img{
+		height: 40%;
+		width: 40%;
+	}
+}

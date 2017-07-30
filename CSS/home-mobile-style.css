@@ -1,0 +1,362 @@
+@media only screen and (max-width: 768px ){
+	*{
+		margin: 0px;
+		user-select:none;
+		-webkit-font-smoothing: antialiased;
+		-moz-font-smoothing: grayscale;
+	    -webkit-user-select: none; 
+	    -moz-user-select: none; 
+	    -ms-user-select: none; 
+	    user-select: none;
+	}
+	.slide-show {
+		height: 100vh;
+		width: 100vw;
+		text-align: center;
+		background-color: #F5F5F5;
+		overflow: hidden;
+	}
+	.intro-text{
+		padding-top: 45%;
+		font-size: 10vmin;
+		color: #424242;
+		margin-right: 5%;
+		margin-left:5% ;
+	}
+	.input-text {
+		border:none!important;
+		border-bottom: 1px solid #616161!important;
+		background-color: inherit;
+		width: 80%;
+		height: 50px;
+		font-size: 5vmin;
+		color: black;
+		transition: border-bottom 0.5s;
+		font-family: 'cooper_hewittlight';
+		text-align: center;
+		margin-top: 25%;
+	}
+	.input-text:focus,.input-text:active{
+		border-bottom: 1px solid #009688!important;
+		outline: none;
+		background-color: inherit;
+	}
+	.intro-button {
+		margin-top: 2%;
+		border-radius: 3px;
+		background-color: #009688;
+		border: 1px solid #00897B;
+		color: #E3F2FD;
+		width: 80%;
+		font-size: 8vmin;
+		transition: background-color 0.5s;
+	}
+	.intro-button:hover,.intro-button:active, .intro-button:focus {
+		background-color: #004D40;
+	}
+	.principal-view {
+		display: none;
+		background-color: #E3F2FD;
+		height: 100%;
+		width:100%;
+		color: #00695C;
+		text-align: center;
+	}
+	.principal-view h1 {
+		padding-top: 30%;
+		margin-left: 10%;
+		margin-right: 10%;
+		font-size: 7.5vmin;
+	}
+	.principal-view p{
+		padding-top: 5%;
+	}
+	#main-graph{
+		height: 40%;
+		width: 100%;
+		display: block;
+		margin: 0 auto;
+	}
+	.go-down, .go-down-2, .go-up{
+		position: relative;
+		display: inline-block;
+		z-index: 10;
+		bottom: 0%;
+		height: 5%;
+		width: 100%;
+		text-align: center;
+		animation: shine 2s infinite;
+		padding-top: 95%;
+	}
+	@-webkit-keyframes shine {
+    	0% {
+    		opacity: 0;
+    	}
+    	50% {
+    		opacity: 1;
+    	}
+    	100%{
+    		opacity: 0;
+    	}
+	}
+	.seta, .seta-2{
+		height: 100%;
+		width: 10%;
+		cursor: pointer;
+	}
+	.seta-up{
+		height: 100%;
+		width: 10%;
+		cursor: pointer;
+		transform: rotate(180deg);
+	}
+	main {
+		height: 180vh;
+		min-height: 965px;
+		width: 100vw;
+		margin-left: -1px;
+	}
+	.first-info{
+		height: 50%;
+		width: 100%;
+		background-image: url("lixo-fundo.jpg");
+		background-position: center;
+		background-color:  #004d40;
+		background-size: cover;
+		background-attachment: fixed;
+		text-align: center;
+		overflow: hidden;
+	}
+
+	.first-info p {
+		padding-top: 3%;
+		margin-left: 4%;
+		margin-right: 4%;
+		font-size: 5vmin;
+	}
+	.first-info h1 {
+		padding-top: 5%;
+		margin-left: 10%;
+		margin-right: 10%;
+		font-size: 8vmin;
+	}
+	.first-info-content{
+		display: none;
+		color: white;
+	}
+	.second-info {
+		overflow: hidden;
+		height: 50%;
+		width: 100%;
+		background-color: #e0f2f1;
+		text-align: center;
+	}
+	.second-info img:not(.seta-up){
+		height: 10vmin;
+		width: 10vmin;
+		text-align: center;
+		margin-left:2%;
+		margin-right:2%;
+		margin-top:8%;
+	}
+	.second-info-text p {
+		padding-top: 5%;
+		margin-left: 10%;
+		margin-right: 10%;
+		font-size: 5vmin;
+	}
+	.second-info-text h1 {
+		padding-top: 5%;
+		margin-left: 10%;
+		margin-right: 10%;
+		font-size: 8vmin;
+	}
+	.second-info-content{
+		display: none;
+		color: #004D40;
+	}
+}
+@media only screen and (max-width: 768px ) and (orientation : landscape){
+		*{
+		margin: 0px;
+		user-select:none;
+		-webkit-font-smoothing: antialiased;
+		-moz-font-smoothing: grayscale;
+	    -webkit-user-select: none; 
+	    -moz-user-select: none; 
+	    -ms-user-select: none; 
+	    user-select: none;
+	}
+	.slide-show {
+		height: 80%;
+		width: 100%;
+		text-align: center;
+	}
+		.slide-show {
+		height: 90%;
+		width: 100%;
+		text-align: center;
+		background-color: #F5F5F5;
+	}
+	.intro-text{
+		padding-top: 10%;
+		font-size: 10vmin;
+		color: #424242;
+		margin-right: 5%;
+		margin-left:5% ;
+	}
+	.input-text {
+		border:none!important;
+		border-bottom: 1px solid #616161!important;
+		background-color: inherit;
+		width: 80%;
+		height: 50px;
+		font-size: 4vmin;
+		color: black;
+		transition: border-bottom 0.5s;
+		font-family: 'cooper_hewittlight';
+		text-align: center;
+		margin-top: 5%;
+	}
+	.input-text:focus,.input-text:active{
+		border-bottom: 1px solid #29b6f6!important;
+		outline: none;
+		background-color: inherit;
+	}
+	.intro-button {
+		margin-top: 2%;
+		border-radius: 3px;
+		background-color: #009688;
+		border: 1px solid #00897B;
+		color: #E3F2FD;
+		height: 15%;
+		width: 50%;
+		font-size: 5vmin;
+		transition: background-color 0.5s;
+	}
+	.intro-button:hover,.intro-button:active, .intro-button:focus {
+		background-color: #004D40;
+	}
+	.principal-view {
+		display: none;
+		background-color: #E3F2FD;
+		height: 100%;
+		width:100%;
+		color: #00695C;
+		text-align: center;
+	}
+	.principal-view h1 {
+		padding-top: 20%;
+		margin-left: 10%;
+		margin-right: 10%;
+		font-size: 7.5vmin;
+	}
+	#main-graph{
+		height: 40%;
+		width: 100%;
+		display: block;
+		margin: 0 auto;
+	}
+	.go-down, .go-down-2, .go-up{
+		position: absolute;
+		bottom: 2%;
+		height: 10%;
+		width: 100%;
+		text-align: center;
+		animation: shine 2s infinite;
+	}
+	.go-down-2{
+		bottom: -86%;
+	}
+	.go-up{
+		bottom: -10%; 
+	}
+	@-webkit-keyframes shine {
+    	0% {
+    		opacity: 0;
+    	}
+    	50% {
+    		opacity: 1;
+    	}
+    	100%{
+    		opacity: 0;
+    	}
+	}
+	.seta, .seta-2{
+		height: 100%;
+		width: 10%;
+		cursor: pointer;
+	}
+	.seta-up{
+		height: 100%;
+		width: 10%;
+		cursor: pointer;
+		transform: rotate(180deg);
+	}
+	main {
+		height: 180%;
+		min-height: 400px;
+		width: 100%;
+		margin-left: -1px;
+	}
+	.first-info{
+		height: 50%;
+		width: 100%;
+		background-image: url("lixo-fundo.jpg");
+		background-position: center;
+		background-color:  #004d40;
+		background-size: cover;
+		background-attachment: fixed;
+		text-align: center;
+		overflow: hidden;
+	}
+
+	.first-info p {
+		padding-top: 3%;
+		margin-left: 4%;
+		margin-right: 4%;
+		font-size: 4.8vmin;
+	}
+	.first-info h1 {
+		padding-top: 5%;
+		margin-left: 10%;
+		margin-right: 10%;
+		font-size: 8vmin;
+	}
+	.first-info-content{
+		display: none;
+		color: white;
+	}
+	.second-info {
+		overflow: hidden;
+		height: 50%;
+		width: 100%;
+		background-color: #e0f2f1;
+		text-align: center;
+	}
+	.second-info img:not(.seta-up){
+		height: 10vmin;
+		width: 10vmin;
+		text-align: center;
+		margin-left:2%;
+		margin-right:2%;
+		margin-top:2%;
+	}
+	.second-info-text p {
+		padding-top: 5%;
+		margin-left: 10%;
+		margin-right: 10%;
+		font-size: 4vmin;
+	}
+	.second-info-text h1 {
+		padding-top: 5%;
+		margin-left: 10%;
+		margin-right: 10%;
+		font-size: 7vmin;
+	}
+	.second-info-content{
+		display: none;
+		color: #004D40;
+	}
+}
+b {text-transform: capitalize;}

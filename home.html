@@ -1,7 +1,7 @@
-<!DOCTYPE html5>
+<!DOCTYPE html>
 <html ng-app="lixoEletronicoIndice" ng-controller ="myCtrl as lixoEletronicoIndice">
 <head lang="pt-br">
-	<title></title>
+	<title>Home - WorldBat</title>
 	<meta name="viewport" content="width=device-width,initial-scale=1" charset="utf-8">
 	<link rel="stylesheet" type="text/css" href="CSS/style.css">
 	<link rel="stylesheet" type="text/css" href="CSS/show-animate.css">
@@ -12,37 +12,42 @@
 	<link rel="stylesheet" type="text/css" href="CSS/menu-animation.css">
 	<link rel="stylesheet" type="text/css" href="CSS/hide-animate.css">
 	<link rel="stylesheet" type="text/css" href="CSS/come-animate.css">
-	<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+	<script type="text/javascript" src="JS/jquery.min.js"></script>
+	<script type="text/javascript" src="JS/jquery.easing.1.3.js"></script>
+	<script type="text/javascript" src="JS/main.js"></script>
+	<script type="text/javascript" src="JS/scroll.js"></script>
+	<script type="text/javascript" src="JS/angular.min.js"></script>
+	<script type="text/javascript" src="JS/app.js"></script>
+	<script type="text/javascript" src="JS/loader.js"></script>
 	<script type="text/javascript">
 	  google.charts.load('current', {'packages':['geochart']});
       google.charts.setOnLoadCallback(paisesIndice);
 
       function paisesIndice(){
-
+      	var graphHeight; 
+      	var graphWidth;
+      	if ($(window).height() < 769) {
+      		graphHeight = "300";
+      		graphWidth = "400";
+      	}else{
+      		graphHeight = "100%";
+      		graphWidth = "100%";
+      	}
         var data = google.visualization.arrayToDataTable([
           ["Country" , "Lixo Eletrônico"],
           ["Brazil" , 1.409],
           ["Chile" , 0.958],
           ["Argentina" , 0.292],
-          ["Colombia" , 0.252],
-          ["Venezuela", 0.233],
-          ["Chile", 0.176],
-          ["Peru", 0.147]
-          ["Equador", 0.073],
-          ["Democratic Republic of the Congo", 0.057],
-          ["Guatemala", 0.055],
-          ["Bolivia", 0.045],
-          ["Costa Rica", 0.036],
-          ["Paraguai", 0.034],
-          ["Uruguai", 0.032],
-          ["Panamá", 0.031]
+          ["Colombia" , 0.252]
           ]);
 
         var options = {
-          "title" : "Qnt. de Lixo eletrônico na América Latina",
           colorAxis: {colors: ['#B71C1C']},
           "backgroundColor" : "#E3F2FD",
-          region : "005"
+          region : "005",
+          "keepAspectRatio" : "false",
+          "height" : graphHeight,
+          "width" : graphWidth,
         };
 
         var chart = new google.visualization.GeoChart(document.getElementById("main-graph"));
@@ -54,20 +59,23 @@
 <div class="fake-nav"></div>
 <div class="slide-show">
 	<div class="intro-view" >
-		<h1 class="intro-text medium show-target">Bem vindo(a)<span ng-show="name">,</span> {{name}}!</h1>
+		<h1 class="intro-text medium show-target">Bem vindo(a)<span ng-show="name">,</span> <b>{{name}}</b>!</h1>
 		<form ng-submit="principalShow()">
-			<input type="text" name="name" ng-hide="nakeOk" placeholder="Insira seu nome aqui..." class="input-text" ng-model="name" autofocus required maxlength="10" minlength="2">
+			<input type="text" name="name" ng-hide="nakeOk" placeholder="Insira seu nome aqui..." class="input-text" ng-model="name" autofocus maxlength="10" minlength="2">
 			<br>
-			<button class="intro-button" type="submit">Ok!</button>
+			<button class="intro-button" type="submit">Pronto</button>
 		</form>	
 	</div>
 
 	<div class="principal-view come-target">
 		<h1 class= "medium">Lixo eletrônico</h1>
+		<div class="principal-text">
+			<p>
+				O Brasil produz, aproximadamente, 1% do lixo eletrônico total, sendo uma quantia aproximada de 2,5kg por habitante, então, se você, <b>{{name}}</b>, mora no Brasil, já se considere nesta lista. Vale ressaltar que a indústria de eletro eletrônicos está em expansão, e que a cada 6 meses, no máximo, grandes novidades surgem, levando uma enorme parcela da população a trocar seus aparelhos.
+			</p>
+		</div>
 		<div id="main-graph"></div>
-		<p>
-			
-		</p>
+
 	</div>
 	<div class="go-down"><img src="IMG/arrow.svg" class="seta"></div>
 </div>
@@ -76,7 +84,7 @@
 			
 			<h1 class="first-info-content animation-target medium">Desenvolvimento Não-sustentável</h1>
 			
-			<p class="first-info-content show-target"><span ng-show="name"><b>{{name}}</b></span> {{lixoEletronicoIndice.info.texto}}</p>
+			<p class="first-info-content show-target"><span ng-show="name"><b>{{name}}, </b></span><span ng-hide="name">V</span><span ng-show="name">v</span>{{lixoEletronicoIndice.info.texto}}</p>
 			
 			<div class="go-down-2"><img src="IMG/arrow-light.svg" class="seta-2"></div>
 
@@ -90,12 +98,7 @@
 	</div>
 </main>
 
-<script type="text/javascript" src="JS/jquery.min.js"></script>
-<script type="text/javascript" src="JS/jquery.easing.1.3.js"></script>
-<script type="text/javascript" src="JS/main.js"></script>
-<script type="text/javascript" src="JS/scroll.js"></script>
-<script type="text/javascript" src="JS/angular.min.js"></script>
-<script type="text/javascript" src="JS/app.js"></script>
+
 
 </body>
 </html>
